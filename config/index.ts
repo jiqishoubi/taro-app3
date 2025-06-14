@@ -48,7 +48,6 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
     h5: {
       publicPath: '/',
       staticDirectory: 'static',
-
       miniCssExtractPluginOption: {
         ignoreOrder: true,
         filename: 'css/[name].[hash].css',

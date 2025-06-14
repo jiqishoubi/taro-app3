@@ -3,13 +3,7 @@ const INITIAL_STATE = {
 }
 
 // reducer
-export default function counter(
-  state = INITIAL_STATE,
-  action: {
-    type: string
-    payload?: any
-  }
-) {
+export default function counter(state = INITIAL_STATE, action: { type: string; payload?: any }) {
   const { type, payload } = action
   switch (type) {
     case 'add':
