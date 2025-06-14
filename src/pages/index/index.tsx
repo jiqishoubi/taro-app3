@@ -3,6 +3,8 @@ import { actions_counter } from '@/store/reducers/counter'
 import { Button, View, Text } from '@tarojs/components'
 import React from 'react'
 import { useDispatch } from 'react-redux'
+import './index.less'
+import styles from './index.module.less'
 
 const Index: React.FC = () => {
   const dispatch = useDispatch()
@@ -34,7 +36,7 @@ const Index: React.FC = () => {
           <Text>{counter.num}</Text>
         </View>
         <View>
-          <Text>Hello, World</Text>
+          <Text className={styles.red}>Hello, World</Text>
         </View>
       </View>
     </>
