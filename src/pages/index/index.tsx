@@ -7,6 +7,8 @@ import './index.less'
 import styles from './index.module.less'
 import Taro from '@tarojs/taro'
 
+console.log(`🚀 ~ TARO_APP_MODE`, process.env.TARO_APP_MODE)
+
 const Index: React.FC = () => {
   const dispatch = useDispatch()
   const counter = useAppSelector((state) => state.counter)

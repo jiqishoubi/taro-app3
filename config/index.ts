@@ -66,6 +66,9 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
           },
         },
       },
+      devServer: {
+        port: 10081, // 开发服务器端口
+      },
     },
     rn: {
       appName: 'taroDemo',
