@@ -28,6 +28,6 @@ export default {
     //       postProcess: (context) => ({ ...context, outputPath: path.join(staticDir, 'index.html') })
     //     }))
     // }
-    publicPath:'./'
+    publicPath: './',
   },
 } satisfies UserConfigExport<'vite'>

@@ -1,10 +1,7 @@
 import React from 'react'
 
 const Index: React.FC = () => {
-  return <>detail2</>
-
-
-
+  return <>detail22</>
 }
 
 export default Index
