@@ -1,30 +1,30 @@
 const INITIAL_STATE = {
   num: 0,
-};
+}
 
 // reducer
 export default function counter(
   state = INITIAL_STATE,
   action: {
-    type: string;
-    payload?: any;
+    type: string
+    payload?: any
   }
 ) {
-  const { type, payload } = action;
+  const { type, payload } = action
   switch (type) {
-    case "add":
-      const addNum = payload || 1; // 默认加1
+    case 'add':
+      const addNum = payload || 1 // 默认加1
       return {
         ...state,
         num: state.num + addNum,
-      };
-    case "minus":
+      }
+    case 'minus':
       return {
         ...state,
         num: state.num - 1,
-      };
+      }
     default:
-      return state;
+      return state
   }
 }
 
@@ -32,21 +32,21 @@ export default function counter(
 export const actions_counter: Record<string, (payload?: any) => any> = {
   add: (payload) => {
     return {
-      type: "add",
+      type: 'add',
       payload,
-    };
+    }
   },
   minus: (payload) => {
     return {
-      type: "minus",
+      type: 'minus',
       payload,
-    };
+    }
   },
   asyncAdd: (payload) => {
     return (dispatch) => {
       setTimeout(() => {
-        dispatch(actions_counter.add(payload));
-      }, 2000);
-    };
+        dispatch(actions_counter.add(payload))
+      }, 2000)
+    }
   },
-};
+}

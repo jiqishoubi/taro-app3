@@ -1,22 +1,22 @@
-import useAppSelector from "@/store/hooks/useAppdSelector";
-import { actions_counter } from "@/store/reducers/counter";
-import { Button, View, Text } from "@tarojs/components";
-import React from "react";
-import { useDispatch } from "react-redux";
+import useAppSelector from '@/store/hooks/useAppdSelector'
+import { actions_counter } from '@/store/reducers/counter'
+import { Button, View, Text } from '@tarojs/components'
+import React from 'react'
+import { useDispatch } from 'react-redux'
 
 const Index: React.FC = () => {
-  const dispatch = useDispatch();
-  const counter = useAppSelector((state) => state.counter);
+  const dispatch = useDispatch()
+  const counter = useAppSelector((state) => state.counter)
 
   const handleAdd = () => {
-    dispatch(actions_counter.add(2));
-  };
+    dispatch(actions_counter.add(2))
+  }
   const handleDec = () => {
-    dispatch(actions_counter.minus());
-  };
+    dispatch(actions_counter.minus())
+  }
   const handleAsyncAdd = () => {
-    dispatch(actions_counter.asyncAdd());
-  };
+    dispatch(actions_counter.asyncAdd())
+  }
 
   return (
     <>
@@ -38,7 +38,7 @@ const Index: React.FC = () => {
         </View>
       </View>
     </>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
