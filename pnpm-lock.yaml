@@ -53,6 +53,9 @@ importers:
       '@tarojs/taro':
         specifier: 4.1.2
         version: 4.1.2(@tarojs/components@4.1.2(@tarojs/helper@4.1.2)(@types/react@18.3.23)(postcss@8.5.5)(react@18.3.1)(rollup@3.29.5))(@tarojs/helper@4.1.2)(@tarojs/shared@4.1.2)(@types/react@18.3.23)(postcss@8.5.5)(rollup@3.29.5)
+      lodash-es:
+        specifier: ^4.17.21
+        version: 4.17.21
       react:
         specifier: ^18.0.0
         version: 18.3.1
@@ -105,6 +108,9 @@ importers:
       babel-preset-taro:
         specifier: 4.1.2
         version: 4.1.2(@babel/core@7.27.4)(@babel/plugin-transform-typescript@7.27.1(@babel/core@7.27.4))(@babel/preset-react@7.27.1(@babel/core@7.27.4))(react-refresh@0.11.0)
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
       eslint:
         specifier: ^8.12.0
         version: 8.57.1

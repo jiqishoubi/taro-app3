@@ -5,6 +5,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import './index.less'
 import styles from './index.module.less'
+import Taro from '@tarojs/taro'
 
 const Index: React.FC = () => {
   const dispatch = useDispatch()
@@ -38,6 +39,13 @@ const Index: React.FC = () => {
         <View>
           <Text className={styles.red}>Hello, World</Text>
         </View>
+        <Button
+          onClick={() => {
+            Taro.navigateTo({ url: '/pages/detail/index' })
+          }}
+        >
+          go to detail
+        </Button>
       </View>
     </>
   )
