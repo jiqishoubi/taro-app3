@@ -22,7 +22,7 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
     plugins: [],
     defineConstants: {},
     copy: {
-      patterns: [],
+      patterns: [{ from: 'public/', to: 'dist/' }],
       options: {},
     },
     framework: 'react',
@@ -67,6 +67,8 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
         },
       },
       devServer: {
+        // host: 'localhost', // 配置应该使用0.0.0.0,而不是127.0.0.1或localhost。前者能够外部访问，后两者只能本机访问。
+        host: '0.0.0.0',
         port: 10081, // 开发服务器端口
       },
     },
