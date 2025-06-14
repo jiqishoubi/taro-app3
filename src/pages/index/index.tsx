@@ -1,8 +1,8 @@
+import useAppSelector from "@/store/hooks/useAppdSelector";
+import { actions_counter } from "@/store/reducers/counter";
 import { Button, View, Text } from "@tarojs/components";
 import React from "react";
 import { useDispatch } from "react-redux";
-import useAppSelector from "../../store/hooks/useAppdSelector";
-import { actions_counter } from "../../store/reducers/counter";
 
 const Index: React.FC = () => {
   const dispatch = useDispatch();
